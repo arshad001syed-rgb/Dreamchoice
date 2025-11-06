@@ -1,0 +1,41 @@
+
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Apply - Dream Choice</title><link rel="stylesheet" href="assets/style.css"></head>
+<body>
+<header class="header container">
+  <div style="display:flex;align-items:center;justify-content:space-between">
+    <div class="brand">Dream Choice Staffing Services</div>
+    <nav class="nav"><a href="index.html">Home</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="apply.html">Apply</a></nav>
+  </div>
+</header>
+
+<main class="container">
+  <h1>Candidate Registration / Apply</h1>
+  <p class="note">Fill required fields and click submit. After submit, WhatsApp and Telegram will open with your filled message — please attach passport/resume/photo manually in the chat.</p>
+
+  <form id="apply-form" class="form-grid" enctype="multipart/form-data" style="margin-top:12px;">
+    <label>Full Name*<input id="name" type="text" name="name" required></label>
+    <label>Date of Birth<input id="dob" type="date" name="dob"></label>
+    <label>Mobile*<input id="mobile" type="tel" name="mobile" required placeholder="+91 93925 64229"></label>
+    <label>Email*<input id="email" type="email" name="email" required></label>
+    <label>Target Country<select id="country" name="country"><option>UAE</option><option>Saudi Arabia</option><option>Oman</option><option>Malta</option><option>Singapore</option><option>Portugal</option><option>Europe</option><option>Russia</option><option>Other</option></select></label>
+    <label>Visa Type<select id="visa" name="visa"><option>Employment</option><option>Business</option><option>Student</option><option>Investor</option><option>Tourist</option></select></label>
+
+    <label>Passport (PDF/JPG)<input type="file" name="passport" accept=".pdf,.jpg,.jpeg,.png"></label>
+    <label>Resume (PDF/DOC/DOCX)<input type="file" name="resume" accept=".pdf,.doc,.docx"></label>
+    <label>Passport-size Photo (JPG/PNG)<input type="file" name="photo" accept=".jpg,.jpeg,.png"></label>
+
+    <label>Notes<textarea id="notes" name="notes" rows="4"></textarea></label>
+
+    <div style="grid-column:1/-1;margin-top:8px;">
+      <button type="submit" class="btn">Submit Application</button>
+    </div>
+  </form>
+</main>
+
+<footer class="footer"><div class="container"><p>Contact: <a href="mailto:dreamchoicesc@mail.com">dreamchoicesc@mail.com</a> | Phone: <a href="tel:+919392564229">+91 93925 64229</a></p><p>&copy; 2025 Dream Choice Staffing Services</p></div></footer>
+
+<script src="assets/script.js"></script>
+</body>
+</html>
